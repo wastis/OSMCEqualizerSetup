@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+echo 'next: disable bluealsa.service';
+systemctl stop bluealsa.service 2>&1
+systemctl disable bluealsa.service 2>&1
+echo 'next: done';

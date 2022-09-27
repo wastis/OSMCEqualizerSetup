@@ -1,0 +1,71 @@
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_de\n"
+
+
+msgctxt "#32000"
+msgid "Error"
+msgstr ""
+
+msgctxt "#32001"
+msgid "This addon is for OSMC only."
+msgstr "Dieses Addon ist nur für OSMC gedacht."
+
+msgctxt "#32002"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#32003"
+msgid "Go to the addon settings and select the desired function."
+msgstr "Gehe zu den Addoneinstellungen und wähle die gewünschte Funktion."
+
+msgctxt "#32004"
+msgid "There where errors, maybe this was not successful. [CR]Please check kodi debug log."
+msgstr "Es gab Fehler. Vielleicht war das Setup nicht erfolgreich. [CR]Bitte überprüfen Sie die Kodi Debug-logdatei."
+
+msgctxt "#32005"
+msgid "System preparation is done. [CR]Linux Addon Resposiory has been installed. [CR][CR]Next Steps: [CR]Reboot the system, now. [CR]Enable Linux Addon Repository in Settings->Add-on browser -> My add-ons -> Add-on reepository[CR]You can then install the equalizer from the Linux Addon Resposiory."
+msgstr "Systemvorbereitung abgeschlossen. [CR]Das Linux Addon Resposiory wurde installiert. [CR][CR]Nächste Schritte: [CR]Starten Sie das System jetzt neu.[CR]Aktivieren Sie das Linux Addon Repository in Einstellungen -> Addon Browser -> Benutzer-Addons -> Addon-Repository[CR]Dann können den Equalizer vom Linux Addon Repository installieren."
+
+msgctxt "#32006"
+msgid "System cleanup is done.  [CR]You should reboot the system, now."
+msgstr "System wurde wieder zurück gesetzt. [CR]Sie sollten das System jetzt neu starten."
+
+msgctxt "#32007"
+msgid "ALSA Bluetooth has been disabled.  [CR]You can now use pulseaudio bluetooth."
+msgstr "ALSA Bluetooth wurde deaktiviert.  [CR]Sie kännen nun das Pulseaudiobluetooth benützen."
+
+msgctxt "#32008"
+msgid "ALSA Bluetooth has been enabled.  [CR]You can now use it."
+msgstr "ALSA Bluetooth wurde aktiviert.  [CR]Sie können es nun benützen."
+
+msgctxt "#32009"
+msgid "WARNING: this scipts alters the operating system. [CR]There is a risk of data loss or operating system break down.[CR]Continue?"
+msgstr "WARNUNG: Dieses Script verändert das Betriebssystem. [CR]Es besteht das Risiko von Datenverlust oder der Zerstörung des Betriebsystems.[CR]Weiter?"
+
+msgctxt "#32100"
+msgid "Install"
+msgstr "Installieren"
+
+msgctxt "#32101"
+msgid "Prepare System with Pulseaudio"
+msgstr "Bereite das System mit Pulseaudio vor"
+
+msgctxt "#32102"
+msgid "Disable Alsa Bluetooth"
+msgstr "Deaktiviere Alsa Bluetooth"
+
+msgctxt "#32200"
+msgid "Remove"
+msgstr "Entfernen"
+
+msgctxt "#32201"
+msgid "Remove Pulseaudio from System"
+msgstr "Entferne Pulseaudio vom System"
+
+msgctxt "#32202"
+msgid "Enable Alsa Bluetooth"
+msgstr "Aktiviere Alsa Bluetooth"

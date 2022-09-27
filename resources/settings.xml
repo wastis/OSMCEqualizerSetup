@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32100">
+        <setting label="32101" type="action" action="RunScript(script.equalizersetup.osmc, install_equalizer)"/>
+        <setting label="32102" type="action" action="RunScript(script.equalizersetup.osmc, disable_alsa_blue)"/>
+    </category>
+    <category label="32200">
+        <setting label="32201" type="action" action="RunScript(script.equalizersetup.osmc, remove_equalizer)"/>
+        <setting label="32202" type="action" action="RunScript(script.equalizersetup.osmc, enable_alsa_blue)"/>
+    </category>
+</settings>

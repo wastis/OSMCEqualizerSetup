@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_gb\n"
+
+
+msgctxt "#32000"
+msgid "Error"
+msgstr "Error"
+
+msgctxt "#32001"
+msgid "This addon is for OSMC only."
+msgstr "This addon is for OSMC only."
+
+msgctxt "#32002"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#32003"
+msgid "Go to the addon settings and select the desired function."
+msgstr "Go to the addon settings and select the desired function."
+
+msgctxt "#32004"
+msgid "There where errors, maybe this was not successful. [CR]Please check kodi debug log."
+msgstr "There where errors, maybe this was not successful. [CR]Please check kodi debug log."
+
+msgctxt "#32005"
+msgid "System preparation is done. [CR]Linux Addon Resposiory has been installed. [CR][CR]Next Steps: [CR]Reboot the system, now. [CR]Enable Linux Addon Repository in Settings->Add-on browser -> My add-ons -> Add-on reepository[CR]You can then install the equalizer from the Linux Addon Resposiory."
+msgstr "System preparation is done. [CR]Linux Addon Resposiory has been installed. [CR][CR]Next Steps: [CR]Reboot the system, now. [CR]Enable Linux Addon Repository in Settings->Add-on browser -> My add-ons -> Add-on reepository[CR]You can then install the equalizer from the Linux Addon Resposiory."
+
+msgctxt "#32006"
+msgid "System has been restored.  [CR]You should reboot the system, now."
+msgstr "System has been restored. [CR]You should reboot the system, now."
+
+msgctxt "#32007"
+msgid "ALSA Bluetooth has been disabled.  [CR]You can now use pulseaudio bluetooth."
+msgstr "ALSA Bluetooth has been disabled.  [CR]You can now use pulseaudio bluetooth."
+
+msgctxt "#32008"
+msgid "ALSA Bluetooth has been enabled.  [CR]You can now use it."
+msgstr "ALSA Bluetooth has been enabled.  [CR]You can now use it."
+
+msgctxt "#32009"
+msgid "WARNING: this scipts alters the operating system. [CR]There is a risk of data loss or operating system break down.[CR]Continue?"
+msgstr "WARNING: this scipts alters the operating system. [CR]There is a risk of data loss or operating system break down.[CR]Continue?"
+
+msgctxt "#32100"
+msgid "Install"
+msgstr "Install"
+
+msgctxt "#32101"
+msgid "Prepare System with Pulseaudio"
+msgstr "Prepare System with Pulseaudio"
+
+msgctxt "#32102"
+msgid "Disable Alsa Bluetooth"
+msgstr "Disable Alsa Bluetooth"
+
+msgctxt "#32200"
+msgid "Remove"
+msgstr "Remove"
+
+msgctxt "#32201"
+msgid "Remove Pulseaudio from System"
+msgstr "Remove Pulseaudio from System"
+
+msgctxt "#32202"
+msgid "Enable Alsa Bluetooth"
+msgstr "Enable Alsa Bluetooth"

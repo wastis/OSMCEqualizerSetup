@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.equalizersetup.osmc" name="Equalizer Setup" version="1.0.0" provider-name="wastis">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="resources/lib/addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>linux</platform>
+		<summary lang="en">Prepares OSMC to run PulseEqualizerGui.</summary>
+		<summary lang="de_DE">Bereitet OSMC für PulseEqualizerGui vor.</summary>
+		<description lang="en">This script updates the system, installs pulseaudio and puleaudio-equalizer on the system and changes the OSMC startup script to enable pulseaudio.</description>
+		<description lang="de_DE">Dieses Programm installiert pulseaudio und pulseaudio-equalizer auf dem system und verändert das OSMC Startscript.</description>
+		<license>GPL-3.0-or-later</license>
+		<source></source>
+		<disclaimer lang="en_GB"></disclaimer>
+		<disclaimer lang="de_DE"></disclaimer>
+		<news>
+v1.0.0 
+- Initial Version</news>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>

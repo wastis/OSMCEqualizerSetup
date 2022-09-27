@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+
+MEDIACENTER="/usr/bin/mediacenter"
+MEDIACENTERBK="/usr/bin/mediacenter.backup"
+
+
+echo 'next: remove pulseaudio'; 
+apt remove -y pulseaudio 
+echo 'next: remove pulseaudio-equalizer';
+apt remove -y pulseaudio-equalizer swh-plugins
+echo 'next: remove pulseaudio-module-bluetooth' 
+apt remove -y pulseaudio-module-bluetooth
+
+echo 'next: resotre startup script'
+
+if [ -f $MEDIACENTERBK ]; then
+	cp $MEDIACENTERBK $MEDIACENTER
+fi
+
+echo 'next: done'

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<window>
+	<defaultcontrol always="true">2000</defaultcontrol>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
+	<coordinates>
+		<left>550</left>
+		<top>150</top>
+		<origin x="550" y="150">Window.IsActive(Home)</origin>
+	</coordinates>
+	<controls>
+		<!-- fade image -->
+		<control type="image">
+			<left>-1920</left>
+			<top>-1080</top>
+			<width>5760</width>
+			<height>3240</height>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<texture colordiffuse="88888888">colimg/black.png</texture>
+		</control>
+		<!-- big back button -->
+		<control type="button" id="2999">
+			<left>-1920</left>
+			<top>-1080</top>
+			<width>5760</width>
+			<height>3240</height>
+			<texturefocus/>
+			<texturenofocus/>
+			<onclick>Action(back)</onclick>
+			<onup>2000</onup>
+			<ondown>2000</ondown>
+			<onleft>2000</onleft>
+			<onright>2000</onright>
+		</control>
+		<!-- background -->
+		<control type="image" id="2001">
+			<visible>true</visible>
+			<left>0</left>
+			<top>0</top>
+			<width>820</width>
+			<height>820</height>
+			<texture colordiffuse="FF242728">colimg/white.png</texture>
+		</control>
+		<!-- background -->
+		<control type="textbox" id="2000">
+		   <left>10</left>
+		   <top>10</top>
+		   <width>800</width>
+		   <height>800</height>
+		   <visible>true</visible>
+		   <colordiffuse>FFFFFFFF</colordiffuse>
+		   <font>font12</font>
+		   <monofont>mono30</monofont>
+		   <textcolor>FFFFFFFF</textcolor>
+		   <pulseonselect></pulseonselect>
+		   <pagecontrol>13</pagecontrol>
+		   <scrolltime>200</scrolltime>
+		   <autoscroll delay="3000" time="1000" repeat="10000">!Control.HasFocus(13)</autoscroll>
+		   <label>start</label>
+		   <align>left</align>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+echo 'next: enable bluealsa.service';
+systemctl enable bluealsa.service 2>&1
+systemctl start bluealsa.service 2>&1
+echo 'next: done';
