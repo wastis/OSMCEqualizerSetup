@@ -10,7 +10,7 @@ Version 1.0.0
 
 # Installation
 
-- Download latest [zip]() from releases.
+- Download latest [zip](https://github.com/wastis/OSMCEqualizerSetup/archive/refs/tags/v1.0.0.zip) from releases.
 - In OSMC, select install from zip and install this addon.
 - Now it is possible to select different scripts in the OSMC Equalizer Setup settings.
 
