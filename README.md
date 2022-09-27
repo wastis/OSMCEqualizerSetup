@@ -2,7 +2,7 @@
 
 A Kodi addon simplifying the installation of pulseaudio equalizer on OSMC systems.
 
-Tested on raspberry pi 3b.
+Tested on raspberry pi 3b, OSMC 9/22, Kodi 19.4.
 
 It installs pulseaudio together with the required modules and the [*Linux Addon Repository*](https://github.com/wastis/LinuxAddonRepo). It further configures the system to run with pulseaudio. 
 
