@@ -1,81 +1,46 @@
-# OSMC Equalizer Setup
+# Kodi PulseEqualizer GUI Addon
 
-A Kodi addon simplifying the installation of pulseaudio equalizer on OSMC systems.
+A graphical frontend in Kodi based on linux for control the pulse audio equalizer. 
 
-Tested on raspberry pi 3b, OSMC 9/22, Kodi 19.4.
+[Version 2.1.8](https://github.com/wastis/LinuxAddonRepo) 
 
-It installs pulseaudio together with the required modules and the [*Linux Addon Repository*](https://github.com/wastis/LinuxAddonRepo). It further configures the system to run with pulseaudio. 
+[*OSMC setup is here*](https://github.com/wastis/OSMCEqualizerSetup)
 
-Version 1.0.0
+Features include:
 
-<img src="resources/media/icon.png" alt="drawing" width="200"/> 
+*	Graphical configuration of the pulseaudio equalizer
+*	Digital Room Correction
+*	Management of equalizer profiles (add, remove and change)
+*	Automatic filter profile switching based on output device
+*	Audio latency-offset slider and automatic switch based on device
+*	System volume control in Kodi 
+*	Automatic switch to Bluetooth headset, if it becomes available
+*	Mini keymap editor
 
-# Installation
+Tested on i386 Linux Mint / Debian 10/11 headless / Raspberry PI 2b and 3b / Ubuntu 18 headless / OSMC 9/22
 
-- Download latest [zip](https://github.com/wastis/OSMCEqualizerSetup/archive/refs/tags/v1.0.0.zip) from releases.
-- In OSMC, select install from zip and install this addon.
-- Now it is possible to select different scripts in the OSMC Equalizer Setup settings.
+More information can be found on [Wiki](https://github.com/wastis/PulseEqualizerGui/wiki)
 
-#### Install from zip
-	settings -> Add-on browser -> Install from zip file
-
-#### Prepare System
-	settings -> Add-on brower -> My add-ons -> Program add-ons -> Equalizer Setup -> Configure
-	
-	Install -> Prepare System with Pulseaudio
-
-#### Reboot
-Reboot is important to start OSMC with pulseaudio. 
-
-#### Enable the Linux Addon Repository
-	settings -> Add-on browser -> My add-ons -> Add-on repository -> Linux Addon Repository -> enable
-
-#### Install Pulseaudio Interface
-	settings -> Add-on browser -> Install from repository -> Linux Addon Repository -> Program add-ons -> Pulse Equalizer
-
-#### Direct audio though pulseaudio
-	settings -> System -> Audio -> Audio output device -> Pulseaudio Sound Server
-
-
-# Bluetooth devices with Equalizer
-Pulseaudio is in conflict with ALSA if it comes to bluetooth devices. Therefore alsa-bluetooth needs to be disabled, when bluetooth shall be used with pulseaudio equalizer.
-
-	settings -> Add-on browser -> My add-ons -> Program add-ons -> Equalizer Setup -> Configure
-	
-	Install -> Disable Alsa Bluetooth
-
-# Revert everything
-
-#### Remove Pulseaudio from the System
-	settings -> Add-on brower -> My add-ons -> Program add-ons -> Equalizer Setup -> Configure
-	
-	Remove -> Remove Pulseaudio from System
-
-#### Enable ALSA Bluetooth
-	settings -> Add-on brower -> My add-ons -> Program add-ons -> Equalizer Setup -> Configure
-	
-	Remove -> Enable Alsa Bluetooth
-
-# Behind the Scenes
-
-There are four shell scripts that also could be launched from command line. 
-They are located in  
-
-	./kodi/addons/script.equalizersetup.osmc/resources/lib/
-
-
-
-**install_equalizer**: Install pulseaudio, pulseaudio-equalizer, swh-plugins,pulseaudio-module-bluetooth, alters the OSMC startup script, downloads and installs the *Linux Addon Repository*
-
-**remove_equalizer**: removes pulseaudio, pulseaudio-equalizer, swh-plugins,pulseaudio-module-bluetooth from the system, recovers original OSMC startup script
-
-**disable_alsa_blue**: stops and disables bluealsa.service
-
-**enable_alsa_blue**: enables and starts bluealsa.service
-
-Those script are launched with sudo -u osmc, obviously they need root access to make the changes to the system. Currently there is no password request by osmc for sudo, this might change in the future. In this case this addon needs to be altered. 
-
+Help can be found in the Kodi forum within this [thread](https://forum.kodi.tv/showthread.php?tid=360514&pid=3094412#pid3094412)
 
 2022 wastis
 
+| <img src="resources/images/Equalizer.png" alt="drawing" width="350"/> | <img src="resources/images/Room Correction.png" alt="drawing" width="350"/> |
+|:--------------:|:-----------:|
 
+## Installation
+
+### System Prerequisites
+This addon requires pulseaudio-equalizer installed on the system
+
+	sudo apt install pulseaudio-equalizer	
+
+### Install Addon in Kodi
+This addon is included into the [Linux Addon Repository](https://github.com/wastis/LinuxAddonRepo). It is recommended to use the repository for the installation of the addon. This will ease version upgrades.
+
+### Configuration
+
+In Kodi, select a pulseaudio hardware ouptut device and start a playback. Select an equalizer profile. The equalizer is then automatically inserted into the playback stream. 
+
+### OSMC
+If you run on OSMC, the [OSMC Equalizer Setup](https://github.com/wastis/OSMCEqualizerSetup) addon does the whole system configuration for you. 
