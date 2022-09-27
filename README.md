@@ -1,6 +1,8 @@
 # OSMC Equalizer Setup
 
-A Kodi addon that simplifies the installation of Pulseaudio Equalizer on OSMC systems and has been tested with a raspbery pi 3b.
+A Kodi addon simplifying the installation of pulseaudio equalizer on OSMC systems.
+
+Tested on raspberry pi 3b.
 
 It installs pulseaudio together with the required modules and the [*Linux Addon Repository*](https://github.com/wastis/LinuxAddonRepo). It further configures the system to run with pulseaudio. 
 
