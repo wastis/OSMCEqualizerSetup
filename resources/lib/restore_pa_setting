@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+
+echo 'next: restore pulseaudio default setting';
+ 
+sudo -u osmc cp /etc/pulse/default.pa /home/osmc/.config/pulse/
+sudo -u osmc sed -i "s/load-module module-udev-detect/load-module module-udev-detect tsched=no/g" "/home/osmc/.config/pulse/default.pa"
+sudo -u osmc cp /etc/pulse/daemon.conf  /home/osmc/.config/pulse/
+sudo -u osmc echo -e 'default-fragments = 4\n' >> /home/osmc/.config/pulse/daemon.conf
+sudo -u osmc echo -e 'default-fragment-size-msec = 15\n' >> /home/osmc/.config/pulse/daemon.conf
+
+echo 'next: done';

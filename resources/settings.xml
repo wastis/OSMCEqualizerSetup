@@ -3,6 +3,7 @@
     <category label="32100">
         <setting label="32101" type="action" action="RunScript(script.equalizersetup.osmc, install_equalizer)"/>
         <setting label="32102" type="action" action="RunScript(script.equalizersetup.osmc, disable_alsa_blue)"/>
+        <setting label="32103" type="action" action="RunScript(script.equalizersetup.osmc, restore_pa_setting)"/>
     </category>
     <category label="32200">
         <setting label="32201" type="action" action="RunScript(script.equalizersetup.osmc, remove_equalizer)"/>

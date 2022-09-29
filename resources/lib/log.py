@@ -1,4 +1,4 @@
-#	This file is part of  Shell Script Launcher for Kodi.
+#	This file is part of  OSM Equalizer Setup for Kodi.
 #
 #	Copyright (C) 2022 wastis    https://github.com/wastis/BluetoothManager
 #

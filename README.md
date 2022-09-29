@@ -6,13 +6,13 @@ Tested on raspberry pi 3b.
 
 It installs pulseaudio together with the required modules and the [*Linux Addon Repository*](https://github.com/wastis/LinuxAddonRepo). It further configures the system to run with pulseaudio. 
 
-Version 1.0.0
+Version 1.0.1
 
 <img src="resources/media/icon.png" alt="drawing" width="200"/> 
 
 # Installation
 
-- Download latest [zip](https://github.com/wastis/OSMCEqualizerSetup/archive/refs/tags/v1.0.0.zip) from releases.
+- Download latest [zip](https://github.com/wastis/OSMCEqualizerSetup/archive/refs/tags/v1.0.1.zip) from releases.
 - In OSMC, select install from zip and install this addon.
 - Now it is possible to select different scripts in the OSMC Equalizer Setup settings.
 
@@ -58,7 +58,7 @@ Pulseaudio is in conflict with ALSA if it comes to bluetooth devices. Therefore 
 
 # Behind the Scenes
 
-There are four shell scripts that also could be launched from command line. 
+There are five shell scripts that also could be launched from command line. 
 They are located in  
 
 	./kodi/addons/script.equalizersetup.osmc/resources/lib/
@@ -72,6 +72,8 @@ They are located in
 **disable_alsa_blue**: stops and disables bluealsa.service
 
 **enable_alsa_blue**: enables and starts bluealsa.service
+
+**restore_pa_setting**: restores the pulseaudio settings to default
 
 Those script are launched with sudo -u osmc, obviously they need root access to make the changes to the system. Currently there is no password request by osmc for sudo, this might change in the future. In this case this addon needs to be altered. 
 

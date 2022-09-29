@@ -63,6 +63,8 @@ def run_addon():
 			msg = 32006
 		elif script == "enable_alsa_blue":
 			msg = 32008
+		elif script == "restore_pa_setting":
+			msg = 32010
 		else: return
 
 		#

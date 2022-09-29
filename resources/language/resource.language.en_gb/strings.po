@@ -45,6 +45,10 @@ msgctxt "#32009"
 msgid "WARNING: this scipts alters the operating system. [CR]There is a risk of data loss or operating system break down.[CR]Continue?"
 msgstr "WARNING: this scipts alters the operating system. [CR]There is a risk of data loss or operating system break down.[CR]Continue?"
 
+msgctxt "#32010"
+msgid "You need to restart in order to apply changes."
+msgstr "You need to restart in order to apply changes."
+
 msgctxt "#32100"
 msgid "Install"
 msgstr "Install"
@@ -57,13 +61,17 @@ msgctxt "#32102"
 msgid "Disable Alsa Bluetooth"
 msgstr "Disable Alsa Bluetooth"
 
+msgctxt "#32103"
+msgid "Restore pulseaudio settings to default."
+msgstr "Restore pulseaudio settings to default."
+
 msgctxt "#32200"
 msgid "Remove"
 msgstr "Remove"
 
 msgctxt "#32201"
-msgid "Remove Pulseaudio from System"
-msgstr "Remove Pulseaudio from System"
+msgid "Restore pulseaudio settings to default"
+msgstr "Restore pulseaudio settings to default"
 
 msgctxt "#32202"
 msgid "Enable Alsa Bluetooth"
