@@ -70,8 +70,8 @@ msgid "Remove"
 msgstr "Remove"
 
 msgctxt "#32201"
-msgid "Restore pulseaudio settings to default"
-msgstr "Restore pulseaudio settings to default"
+msgid "Remove Pulseaudio from the System"
+msgstr "Remove Pulseaudio from the System"
 
 msgctxt "#32202"
 msgid "Enable Alsa Bluetooth"

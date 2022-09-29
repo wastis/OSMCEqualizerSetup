@@ -71,7 +71,7 @@ msgid "Remove"
 msgstr "Entfernen"
 
 msgctxt "#32201"
-msgid "Remove Pulseaudio from System"
+msgid "Remove Pulseaudio from the System"
 msgstr "Entferne Pulseaudio vom System"
 
 msgctxt "#32202"

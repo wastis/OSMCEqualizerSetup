@@ -20,6 +20,7 @@
 v1.0.1
 - Disable timer schedule by default and set a default buffer size
 - Add menu entry to reset pulseaudio settings 
+- Include a static equalizer route with a compressor
 v1.0.0 
 - Initial Version</news>
 		<assets>
