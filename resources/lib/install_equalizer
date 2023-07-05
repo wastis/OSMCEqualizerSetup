@@ -47,12 +47,20 @@ if  grep -q "Open Source Media Center" "/etc/os-release" ; then
 	fi
 
 	if  grep -q "su osmc " $MEDIACENTER ; then
-		echo '/usr/bin/mediacenter is already updated'; 
+		echo '/usr/bin/mediacenter has already been updated'; 
 	else
-		if  grep -q "sudo -u osmc MALLOC_MMAP_THRESHOLD" $MEDIACENTER ; then
+		if  grep -q "sudo -u osmc LIRC_SOCKET_PATH" $MEDIACENTER ; then
+			echo 'found rpi2/4 variant of watchdog'
+			sed -i "s/sudo -u osmc /su osmc -c \"LIRC_SOCKET_PATH=\/var\/run\/lirc\/lircd XDG_RUNTIME_DIR=\/run\/user\/$(id -u osmc) \$KODI --standalone -fs;  CODE=\$?\"\n\t#sudo -u osmc /g" $MEDIACENTER
+		else if  grep -q "sudo -u osmc MALLOC_MMAP_THRESHOLD" $MEDIACENTER ; then
+			echo 'found vero3/5 variant of watchdog'
 			sed -i "s/sudo -u osmc /su osmc -c \"MALLOC_MMAP_THRESHOLD_=8192 LIRC_SOCKET_PATH=\/var\/run\/lirc\/lircd XDG_RUNTIME_DIR=\/run\/user\/$(id -u osmc) \$KODI --standalone -fs;  CODE=\$?\"\n\t#sudo -u osmc /g" $MEDIACENTER
+		else if  grep -q "sudo -u osmc xinit LIRC_SOCKET_PATH" $MEDIACENTER ; then
+			echo 'found PC variant of watchdog'
+			sed -i "s/sudo -u osmc /su osmc -c \"xinit LIRC_SOCKET_PATH=\/var\/run\/lirc\/lircd XDG_RUNTIME_DIR=\/run\/user\/$(id -u osmc) \$KODI --standalone -fs;  CODE=\$?\"\n\t#sudo -u osmc /g" $MEDIACENTER
 		else
-			echo 'error: /usr/bin/mediacenter has changed, cannot update';
+			echo 'error: /usr/bin/mediacenter (OSMC mediacenter watchdog) is for an unknown architecture or was changed';
+			echo 'it could not be modified.'
 		fi
 	fi
 	
