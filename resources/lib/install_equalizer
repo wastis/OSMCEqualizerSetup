@@ -49,19 +49,19 @@ if  grep -q "Open Source Media Center" "/etc/os-release" ; then
 	if  grep -q "su osmc " $MEDIACENTER ; then
 		echo '/usr/bin/mediacenter is already updated'; 
 	else
-		if  grep -q "sudo -u osmc LIRC_SOCKET_PATH" $MEDIACENTER ; then
-			sed -i "s/sudo -u osmc /su osmc -c \"LIRC_SOCKET_PATH=\/var\/run\/lirc\/lircd XDG_RUNTIME_DIR=\/run\/user\/$(id -u osmc) \$KODI --standalone -fs;  CODE=\$?\"\n\t#sudo -u osmc /g" $MEDIACENTER
+		if  grep -q "sudo -u osmc MALLOC_MMAP_THRESHOLD" $MEDIACENTER ; then
+			sed -i "s/sudo -u osmc /su osmc -c \"MALLOC_MMAP_THRESHOLD_=8192 LIRC_SOCKET_PATH=\/var\/run\/lirc\/lircd XDG_RUNTIME_DIR=\/run\/user\/$(id -u osmc) \$KODI --standalone -fs;  CODE=\$?\"\n\t#sudo -u osmc /g" $MEDIACENTER
 		else
 			echo 'error: /usr/bin/mediacenter has changed, cannot update';
 		fi
 	fi
 	
-	if [ ! -f "/home/osmc/.kodi/temp/repository.linuxaddons-1.0.0.zip" ]; then
+	if [ ! -f "/home/osmc/.kodi/temp/repository.linuxaddons-1.0.1.zip" ]; then
 		echo 'next: download Linux Addon Repository';
-		sudo -u osmc wget -q https://raw.github.com/wastis/LinuxAddonRepo/master/repository.linuxaddons-1.0.0.zip -P /home/osmc/.kodi/temp/
+		sudo -u osmc wget -q https://github.com/wastis/LinuxAddonRepo/raw/master/repository.linuxaddons-1.0.1.zip -P /home/osmc/.kodi/temp/
 	fi
 	echo 'next: install Linux Addon Repository';
-	sudo -u osmc unzip -o -d /home/osmc/.kodi/addons /home/osmc/.kodi/temp/repository.linuxaddons-1.0.0.zip
+	sudo -u osmc unzip -o -d /home/osmc/.kodi/addons /home/osmc/.kodi/temp/repository.linuxaddons-1.0.1.zip
 	
 	echo 'next: recompile python libararies for performance reason'
 	python -m compileall -o 1 /usr/lib/python3*
